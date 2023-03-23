@@ -1,0 +1,74 @@
+body {
+	display: flex;
+	height: 100vh;
+	margin: 0;
+}
+
+#canvas-container {
+	flex: 1;
+	background-color: #202025;
+}
+canvas {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#slider-container {
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	width: 20%;
+	background-color: #303035;
+	padding: 20px;
+}
+.slider {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #1e90ff;
+	cursor: pointer;
+}
+
+select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #fff;
+  background-color: #303035;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+option {
+  color: #fff;
+  background-color: #303035;
+  font-size: 16px;
+}
+
+#c{
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+  	left: 0;
+  	margin-bottom: 15px;
+  	text-align: center;
+}

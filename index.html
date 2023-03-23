@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>L-system</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+<div id="slider-container">
+	<select id="dropdown" name="options">
+		<option value="option1">Дерево Пифагора</option>
+		<option value="option2">Ель</option>
+		<option value="option3">Каламит</option>
+		<option value="option4">Водоросль</option>
+		<option value="option5">Плато</option>
+	</select>
+	<input class="slider" type="range" min="1" id="recursion_slider">
+	<label for="recursion_slider">Уровень рекурсии: <span id="recursion_text"></span></label>
+	<input class="slider" type="range" min="0" max="180" value="45" id="angle_slider">
+	<label for="angle_slider">Угол: <span id="angle_text"></span></label>
+	<label id="c">© Олег Пономаренко 2023 | КубГТУ ИКСиИБ</label>
+</div>
+
+<div id="canvas-container">
+	<canvas id="canvas"></canvas>
+</div>
+
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="script/script.js"></script>
+
+</body>
+</html>
